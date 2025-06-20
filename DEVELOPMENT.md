@@ -20,6 +20,7 @@ In order to streamline the build steps, reproducible builds are achieved through
 - `Dockerfile`: Contains all the build steps needed to build and test gocesiumtiler in both Windows and Linux.
 - `build.sh`: Kickstarts the docker build process injecting the right arguments.
 - `build.ps1`: Powershell scripts that works as `build.sh` but meant to be used with powershell under a windows environment.
+- `Makefile` : Makefile generated from CHATGPT for mac m2 mini 8gb machine to build binary at ./bin/gocesiumtiler-darwin-arm64 and also test & clean the binary
 
 The Dockerfile is organized as a multi-stage build.
 1. A base image is prepared, containing essential build tools.
